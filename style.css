@@ -9,6 +9,8 @@
   --main-blue: #2d25a0;
   --button-bg: #e02c6d;
   --text-grey: #6c6c6c;
+  --icon-grey: #969bab;
+  --icon-bg: #e7e7e8;
 }
 
 /* css custom variable end */
@@ -208,6 +210,37 @@ header {
 /* highlight section end */
 
 /* footer section start */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 158px;
+}
+
+.footer-img img {
+  height: 110px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-instagram,
+.fa-dribbble,
+.fa-twitter,
+.fa-youtube {
+  background-color: var(--icon-bg);
+  color: var(--icon-grey);
+  padding: 7px;
+  margin: 7px;
+  border-radius: 50px;
+}
+
+.copyright {
+  margin: 20px 0 60px 0;
+  text-align: center;
+}
 /* footer section end */
 
 /* animation start */
