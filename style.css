@@ -154,6 +154,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   color: var(--text-grey);
+  text-align: justify;
 }
 
 .card img {
@@ -161,6 +162,53 @@ header {
 }
 
 /* card section end */
+
+/* highlight section start */
+
+.highlight {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 165px;
+}
+
+.highlight-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 560px;
+}
+
+.highlight-text p {
+  margin-top: 8px;
+  max-width: 466px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-grey);
+  text-align: justify;
+}
+
+.highlight-button {
+  padding: 10px 24px;
+  background: var(--button-bg);
+  max-width: 168px;
+  margin-top: 27px;
+}
+
+.highlight-button a,
+.fa-arrow-right {
+  color: var(--main-white);
+}
+
+.fa-arrow-right {
+  padding-left: 8px;
+}
+
+.highlight-img img {
+  height: 427px;
+}
+/* highlight section end */
+
+/* footer section start */
+/* footer section end */
 
 /* animation start */
 @keyframes letter {
