@@ -8,6 +8,7 @@
   --main-black: #000;
   --main-blue: #2d25a0;
   --button-bg: #e02c6d;
+  --text-grey: #6c6c6c;
 }
 
 /* css custom variable end */
@@ -72,5 +73,99 @@ header {
 /* navbar end */
 
 /* hero section start */
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-title {
+  font-size: 64px;
+  color: var(--main-white);
+  max-width: 485px;
+}
+
+.hero-title span {
+  display: inline-block;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-title span:hover {
+  color: var(--button-bg);
+  animation: letter 1s linear infinite;
+}
+
+.hero-button {
+  padding: 10px 24px;
+  background: var(--button-bg);
+  max-width: 168px;
+  margin-top: 27px;
+}
+
+.hero-button a,
+.fa-arrow-right {
+  color: var(--main-white);
+}
+
+.fa-arrow-right {
+  padding-left: 8px;
+}
+
+.hero-img img {
+  height: 438px;
+}
 /* hero section end */
 /* header end */
+
+/* card section start */
+
+.card-section {
+  display: flex;
+  justify-content: center;
+}
+
+.player-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 70px;
+}
+
+.card {
+  height: 474px;
+  width: 330px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin: 0 30px 30px 0;
+}
+
+.card-info {
+  width: 300px;
+}
+
+.card-info h1 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.card-info p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-grey);
+}
+
+.card img {
+  width: 300px;
+}
+
+/* card section end */
+
+/* animation start */
+@keyframes letter {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* animation end */
