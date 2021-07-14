@@ -214,8 +214,14 @@ header {
 
 /* News section start */
 
+.news-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 560px;
+  margin: 70px auto 30px auto;
+}
+
 .news-articles {
-  margin-top: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -353,7 +359,133 @@ footer {
 /* animation end */
 
 /* responsive start */
-@media screen and (max-width: 360px) {
+
+@media screen and (max-width: 1024px) {
+  /* navbar start */
+  .navbar {
+    display: none;
+  }
+  .main-nav {
+    display: none;
+  }
+
+  /* hero section start */
+
+  .hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 20px 20px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.5em;
+  }
+
+  .hero-img img {
+    height: 320px;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  /* hero section end */
+
+  /* navbar end */
+  /* card section start */
+
+  .card-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
+
+  .player-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+  }
+
+  .card {
+    height: 500px;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin: 0 50px 30px 50px;
+  }
+
+  .card-info {
+    width: 250px;
+  }
+
+  .card-info h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 10px;
+    margin-left: 0px;
+  }
+
+  .card-info p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-grey);
+    text-align: justify;
+  }
+
+  .card img {
+    width: 250px;
+  }
+
+  /* card section end */
+
+  /* highlight section start */
+
+  .highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .highlight-text h1 {
+    font-size: 3em;
+    margin-left: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .highlight-text p {
+    margin-top: 8px;
+    margin-left: 20px;
+    width: 460px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-grey);
+    text-align: center;
+  }
+
+  .highlight-button {
+    padding: 10px 24px;
+    background: var(--button-bg);
+    max-width: 168px;
+    margin: 27px auto;
+  }
+
+  .highlight-button a,
+  .fa-arrow-right {
+    color: var(--main-white);
+  }
+
+  .fa-arrow-right {
+    padding-left: 8px;
+  }
+
+  .highlight-img img {
+    height: 560px;
+  }
+  /* highlight section end */
+}
+
+@media screen and (max-width: 768px) {
   /* navbar start */
   .navbar {
     display: none;
@@ -374,23 +506,58 @@ footer {
   }
 
   .hero-title {
-    font-size: 2.3em;
+    font-size: 2em;
   }
 
   .hero-img img {
+    height: 230px;
     margin-top: 100px;
-    height: 260px;
+    margin-left: 30px;
   }
   /* hero section end */
 
   /* card section start */
 
+  .card-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
+
   .player-cards {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 70px;
   }
 
   .card {
-    margin: 0 30px;
+    height: 504px;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin: 0 30px 30px 30px;
+  }
+
+  .card-info {
+    width: 250px;
+  }
+
+  .card-info h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 10px;
+    margin-left: 0px;
+  }
+
+  .card-info p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-grey);
+    text-align: justify;
+  }
+
+  .card img {
+    width: 250px;
   }
 
   /* card section end */
@@ -399,45 +566,81 @@ footer {
   .highlight {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    margin-top: 70px;
   }
 
   .highlight-text h1 {
-    font-size: 2em;
+    font-size: 1.7em;
+    margin-left: 20px;
+    font-weight: 700;
     text-align: center;
   }
 
   .highlight-text p {
-    max-width: 90vw;
+    margin-top: 8px;
+    margin-left: 20px;
+    width: 280px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-grey);
+    text-align: center;
   }
 
   .highlight-button {
-    margin: 27px 0;
+    padding: 10px 24px;
+    background: var(--button-bg);
+    max-width: 168px;
+    margin: 27px 0 27px 80px;
+  }
+
+  .highlight-button a,
+  .fa-arrow-right {
+    color: var(--main-white);
+  }
+
+  .fa-arrow-right {
+    padding-left: 8px;
   }
 
   .highlight-img img {
-    height: 248px;
+    height: 220px;
+    margin-left: 25px;
   }
   /* highlight section end */
   /* News section start */
 
-  .news-articles {
-    flex-direction: column;
-    align-items: center;
+  .news-section h1 {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+    width: 280px;
+    margin: 27px auto;
   }
-
   .news img {
-    height: 248px;
+    height: 180px;
     opacity: 0.9;
+    margin: 0 auto;
   }
 
   .news-title {
-    max-width: 230px;
-    top: 0;
+    display: none;
   }
+
+  .news-link {
+    text-align: center;
+    border: 1px solid var(--button-bg);
+    padding: 5px 30px;
+    color: var(--main-black);
+    display: flex;
+    justify-content: center;
+
+    border-radius: 10px;
+  }
+
   /* News section end */
   /* Matches section start */
-
   .matches {
     display: flex;
     flex-direction: column;
@@ -453,10 +656,15 @@ footer {
 
   /* footer section start */
 
+  footer {
+    display: flex;
+    margin-top: 70px;
+  }
   .footer-img img {
     height: 63px;
   }
 
   /* footer section end */
 }
+
 /* responsive end */
