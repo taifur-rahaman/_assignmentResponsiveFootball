@@ -262,6 +262,50 @@ header {
 /* News section end */
 
 /* Matches section start */
+
+.match-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+fieldset {
+  width: 80vw;
+}
+
+legend {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.matches {
+  display: flex;
+  justify-content: space-around;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flag {
+  display: flex;
+  flex-direction: column;
+}
+
+.flag img {
+  padding: 15px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
 /* Matches section end */
 
 /* Bonus section end */
