@@ -353,5 +353,110 @@ footer {
 /* animation end */
 
 /* responsive start */
+@media screen and (max-width: 360px) {
+  /* navbar start */
+  .navbar {
+    display: none;
+  }
+  .main-nav {
+    display: none;
+  }
 
+  /* navbar end */
+
+  /* hero section start */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 2.3em;
+  }
+
+  .hero-img img {
+    margin-top: 100px;
+    height: 260px;
+  }
+  /* hero section end */
+
+  /* card section start */
+
+  .player-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    margin: 0 30px;
+  }
+
+  /* card section end */
+  /* highlight section start */
+
+  .highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-text h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .highlight-text p {
+    max-width: 90vw;
+  }
+
+  .highlight-button {
+    margin: 27px 0;
+  }
+
+  .highlight-img img {
+    height: 248px;
+  }
+  /* highlight section end */
+  /* News section start */
+
+  .news-articles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news img {
+    height: 248px;
+    opacity: 0.9;
+  }
+
+  .news-title {
+    max-width: 230px;
+    top: 0;
+  }
+  /* News section end */
+  /* Matches section start */
+
+  .matches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .score {
+    margin: 15px 15px;
+  }
+
+  /* Matches section end */
+
+  /* footer section start */
+
+  .footer-img img {
+    height: 63px;
+  }
+
+  /* footer section end */
+}
 /* responsive end */
